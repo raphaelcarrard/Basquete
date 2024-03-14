@@ -1,0 +1,44 @@
+{
+  "name": "com.unity.2d.animation",
+  "version": "10.1.1",
+  "unity": "2023.1",
+  "displayName": "2D Animation",
+  "description": "2D Animation provides all the necessary tooling and runtime components for skeletal animation using Sprites.",
+  "keywords": [
+    "2d",
+    "animation"
+  ],
+  "category": "2D",
+  "dependencies": {
+    "com.unity.2d.common": "9.0.4",
+    "com.unity.2d.sprite": "1.0.0",
+    "com.unity.collections": "1.2.4",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.uielements": "1.0.0"
+  },
+  "relatedPackages": {
+    "com.unity.2d.animation.tests": "10.1.1",
+    "com.unity.2d.common.tests": "9.0.4",
+    "com.unity.2d.psdimporter": "9.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Samples",
+      "description": "Various 2D Animation sample scenes to show different usage of the 2D Animation tooling for various outcomes.",
+      "path": "Samples~/AnimationSamples"
+    }
+  ],
+  "_upm": {
+    "changelog": "### Added\n- Support for automatic weight generation in the Skinning Editor for ARM64 editors. (case DANB-550)\n\n### Fixed\n- Sprite Resolver previews not visible after editor regained focus. (case DANB-565)\n- Sprite Skin is not deformed in the Editor after exiting the playmode if the domain reload is disabled. (case DANB-573)"
+  },
+  "upmCi": {
+    "footprint": "4a7feb7841ca74e15c65477268e1c0218bcfa813"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.2d.animation@10.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/2d.git",
+    "type": "git",
+    "revision": "de1d2b0a924b0621324b0cfe0fcbef92f03bd2c2"
+  },
+  "_fingerprint": "40df1def0b3780ccc51cab02302dea869437abea"
+}

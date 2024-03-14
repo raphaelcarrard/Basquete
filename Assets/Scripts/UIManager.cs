@@ -25,19 +25,6 @@ public class UIManager : MonoBehaviour
     public GameObject[] bolasPrefab;
     public Transform pos;
 
-    public io.newgrounds.core ngio_core;
-
-    void onMedalUnlocked(io.newgrounds.results.Medal.unlock result) {
-		io.newgrounds.objects.medal medal = result.medal;
-		Debug.Log( "Medal Unlocked: " + medal.name + " (" + medal.value + " points)" );
-	}
-
-    void unlockMedal(int medal_id) {
-        io.newgrounds.components.Medal.unlock medal_unlock = new io.newgrounds.components.Medal.unlock();
-        medal_unlock.id = medal_id;
-        medal_unlock.callWith(ngio_core, onMedalUnlocked);
-    }
-
     void Awake()
     {
         if (instance == null)

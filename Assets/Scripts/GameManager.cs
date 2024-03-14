@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Animator animCont;
     private Animator maoAnim, bolinhasAnim;
+    public bool medal1, medal2, medal3, medal4, medal5;
 
     public void LiberaContagem()
     {
@@ -128,6 +129,26 @@ public class GameManager : MonoBehaviour
         else if (numJogadas > 0 && desafioNum1RimShot <= 0 && desafioNum2SwishShot <= 0 && desafioNum3SkyHook <= 0)
         {
             YouWin();
+        }
+        if(pontos == 1 && medal1 == false){
+            NGHelper.instance.unlockMedal(77781);
+            medal1 = true;
+        }
+        if(pontos == 2 && medal2 == false){
+            NGHelper.instance.unlockMedal(77782);
+            medal2 = true;
+        }
+        if(pontos == 3 && medal3 == false){
+            NGHelper.instance.unlockMedal(77783);
+            medal3 = true;
+        }
+        if(pontos == 4 && medal4 == false){
+            NGHelper.instance.unlockMedal(77784);
+            medal4 = true;
+        }
+        if(pontos == 5 && medal5 == false){
+            NGHelper.instance.unlockMedal(77785);
+            medal5 = true;
         }
     }
 

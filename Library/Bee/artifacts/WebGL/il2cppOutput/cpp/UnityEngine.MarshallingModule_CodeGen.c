@@ -1,0 +1,78 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void InvokeTests_InvokeBool_m12BA6A2C315356663749E4F7EF5C667AFB402580 (void);
+extern void InvokeTests_InvokeSByte_mC651F8D6576EAF67E8474D2E57F1120358D5A4A3 (void);
+extern void InvokeTests_InvokeByte_m83669852F5C02E9B6826CE45D75A35C89E5E8E2D (void);
+extern void InvokeTests_InvokeChar_m95B5700F855D680F50696FD4B512AB6587892BE2 (void);
+extern void InvokeTests_InvokeShort_mA6BC1FD874204556FFF8EBAAEF25E88430DECD42 (void);
+extern void InvokeTests_InvokeUShort_m110BCD4727CEF0646850C7EE7674BF549F4DEEB4 (void);
+extern void InvokeTests_InvokeInt_mC1BA6B4869D4A0C84A258797246C536632C6DAA3 (void);
+extern void InvokeTests_InvokeUInt_mCB403C4EB1B277CA2E67A1CEBF5F35A71174A7F9 (void);
+extern void InvokeTests_InvokeLong_mF1D8E00411B9E40925371921D31B928E9CA33D16 (void);
+extern void InvokeTests_InvokeULong_mC85E905B6DA29A0EBF0CE71EA861EB287E3A80E8 (void);
+extern void InvokeTests_InvokeIntPtr_mE524F483AC4D7FEB001E600B4DD652A6D8582225 (void);
+extern void InvokeTests_InvokeUIntPtr_mB90AD89BA719C8B7BCEF4B0B4F6C64E56AF341D7 (void);
+extern void InvokeTests_InvokeFloat_m5EBA811C820396F22B6B3DEB340842A3BEB4E80F (void);
+extern void InvokeTests_InvokeDouble_m113305A590A982DC63C17BD617B6EFBD62D1505C (void);
+static Il2CppMethodPointer s_methodPointers[14] = 
+{
+	InvokeTests_InvokeBool_m12BA6A2C315356663749E4F7EF5C667AFB402580,
+	InvokeTests_InvokeSByte_mC651F8D6576EAF67E8474D2E57F1120358D5A4A3,
+	InvokeTests_InvokeByte_m83669852F5C02E9B6826CE45D75A35C89E5E8E2D,
+	InvokeTests_InvokeChar_m95B5700F855D680F50696FD4B512AB6587892BE2,
+	InvokeTests_InvokeShort_mA6BC1FD874204556FFF8EBAAEF25E88430DECD42,
+	InvokeTests_InvokeUShort_m110BCD4727CEF0646850C7EE7674BF549F4DEEB4,
+	InvokeTests_InvokeInt_mC1BA6B4869D4A0C84A258797246C536632C6DAA3,
+	InvokeTests_InvokeUInt_mCB403C4EB1B277CA2E67A1CEBF5F35A71174A7F9,
+	InvokeTests_InvokeLong_mF1D8E00411B9E40925371921D31B928E9CA33D16,
+	InvokeTests_InvokeULong_mC85E905B6DA29A0EBF0CE71EA861EB287E3A80E8,
+	InvokeTests_InvokeIntPtr_mE524F483AC4D7FEB001E600B4DD652A6D8582225,
+	InvokeTests_InvokeUIntPtr_mB90AD89BA719C8B7BCEF4B0B4F6C64E56AF341D7,
+	InvokeTests_InvokeFloat_m5EBA811C820396F22B6B3DEB340842A3BEB4E80F,
+	InvokeTests_InvokeDouble_m113305A590A982DC63C17BD617B6EFBD62D1505C,
+};
+static const int32_t s_InvokerIndices[14] = 
+{
+	11124,
+	11406,
+	11124,
+	11493,
+	11238,
+	11493,
+	11259,
+	11510,
+	11288,
+	11592,
+	11305,
+	11598,
+	11427,
+	11191,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_MarshallingModule_CodeGenModule;
+const Il2CppCodeGenModule g_UnityEngine_MarshallingModule_CodeGenModule = 
+{
+	"UnityEngine.MarshallingModule.dll",
+	14,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

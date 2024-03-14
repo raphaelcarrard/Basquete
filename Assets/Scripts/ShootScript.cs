@@ -31,23 +31,9 @@ public class ShootScript : MonoBehaviour
     private bool liberaSky;
     private Animator anim;
 
-    public io.newgrounds.core ngio_core;
-
-    void onMedalUnlocked(io.newgrounds.results.Medal.unlock result) {
-		io.newgrounds.objects.medal medal = result.medal;
-		Debug.Log( "Medal Unlocked: " + medal.name + " (" + medal.value + " points)" );
-	}
-
-    void unlockMedal(int medal_id) {
-        io.newgrounds.components.Medal.unlock medal_unlock = new io.newgrounds.components.Medal.unlock();
-        medal_unlock.id = medal_id;
-        medal_unlock.callWith(ngio_core, onMedalUnlocked);
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        ngio_core = GameObject.Find("Newgrounds.io Object").GetComponent<io.newgrounds.core>();
         anim = GameObject.FindWithTag("RimTxt").GetComponent<Animator>();
         liberaSky = false;
         fezponto = false;
@@ -94,7 +80,7 @@ public class ShootScript : MonoBehaviour
                         GameManager.instance.desafioNum1RimShot--;
                         GameManager.instance.DesafioDeFase(OndeEstou.instance.fase);
                         anim.Play("RimShotAnim");
-                        unlockMedal(71260);
+                        NGHelper.instance.unlockMedal(71260);
                     }
                     else if (fezponto == true && liberaSky == false)
                     {
@@ -103,7 +89,7 @@ public class ShootScript : MonoBehaviour
                         GameManager.instance.desafioNum2SwishShot--;
                         GameManager.instance.DesafioDeFase(OndeEstou.instance.fase);
                         anim.Play("RimShotAnim");
-                        unlockMedal(71261);
+                        NGHelper.instance.unlockMedal(71261);
                     }
                 }
                 if (liberaSky == true && fezponto == true)
@@ -113,7 +99,7 @@ public class ShootScript : MonoBehaviour
                     GameManager.instance.desafioNum3SkyHook--;
                     GameManager.instance.DesafioDeFase(OndeEstou.instance.fase);
                     anim.Play("RimShotAnim");
-                    unlockMedal(71262);
+                    NGHelper.instance.unlockMedal(71262);
                 }
             }
         }

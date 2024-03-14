@@ -1,0 +1,41 @@
+{
+  "name": "com.unity.2d.common",
+  "displayName": "2D Common",
+  "version": "9.0.4",
+  "unity": "2023.1",
+  "description": "2D Common is a package that contains shared functionalities that are used by most of the other 2D packages.",
+  "keywords": [
+    "2d"
+  ],
+  "category": "2D",
+  "dependencies": {
+    "com.unity.2d.sprite": "1.0.0",
+    "com.unity.mathematics": "1.1.0",
+    "com.unity.modules.uielements": "1.0.0",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.burst": "1.8.4"
+  },
+  "samples": [
+    {
+      "displayName": "Sprite Atlas Samples",
+      "description": "Samples to get started with SpriteAtlas",
+      "path": "Samples~/SpriteAtlas"
+    }
+  ],
+  "relatedPackages": {
+    "com.unity.2d.common.tests": "9.0.4"
+  },
+  "_upm": {
+    "changelog": "### Changed\n- Internal changed to use public shortcut API."
+  },
+  "upmCi": {
+    "footprint": "85faab16a6badb1e8bd29fd6051c5fb9bd0710a6"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.2d.common@9.0/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/2d.git",
+    "type": "git",
+    "revision": "de1d2b0a924b0621324b0cfe0fcbef92f03bd2c2"
+  },
+  "_fingerprint": "5463af8c0a9360bd008b6cfcbcff3b3d4eb79b0e"
+}
